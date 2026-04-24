@@ -67,7 +67,7 @@ Each BMS must have a unique address (configured via the JK-BMS mobile app):
 ### Operating System Compatibility
 - **Linux**: Tested (Ubuntu 20.04+)
 
-- 
+  
 ### Related Projects
 - **esphome-jk-bms**: ESPHome integration for JK-BMS
 - **arduino-jk-bms**: Arduino library for JK-BMS
