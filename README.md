@@ -48,7 +48,8 @@ A Node.js application for real-time monitoring of up to 4 JK-BMS (JIKONG Battery
 ## Installation
 
 # 1. Clone the repository
-git clone https://github.com/cartorre/JK-BMS_RS485-2
+git@github.com:cartorre/JK-BMS_RS485-2.git
+
 cd JK-BMS_RS485-2
 
 # 2. Install dependencies
