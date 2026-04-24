@@ -57,6 +57,38 @@ npm install
 
 # 3. Configure serial port (edit jk-bms-monitor.js)
 Linux:   /dev/ttyUSB0 (tested)
+**Important Notes:**
+- Cross-connect TX/RX: BMS TX → Converter RX, BMS RX → Converter TX
+- Do NOT connect VBAT (battery voltage) to the converter
+- The BMS uses 3.3V/5V TTL logic levels (not differential RS-485)
+- Only connect the MASTER BMS directly; slave BMS units communicate through the RS-485 bus
+
+### Battery Address Configuration
+Each BMS must have a unique address (configured via the JK-BMS mobile app):
+- **Address 0x00**: Master
+- **Address 0x01**: Slave 1
+- **Address 0x02**: Slave 2
+- **Address 0x03**: Slave 3
+
+## Software Requirements
+
+| Software | Minimum Version |
+|----------|----------------|
+| Node.js  | 14.x or higher |
+| npm      | 6.x or higher  |
+
+### Operating System Compatibility
+- **Linux**: Tested (Ubuntu 20.04+)
+- **Windows**: Tested (Windows 10/11)
+- **macOS**: Should work (untested)
+
+## Installation
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/YOUR_USERNAME/jk-bms-monitor.git
+cd jk-bms-monitor
+
 
 
 # 4. Run the monitor
