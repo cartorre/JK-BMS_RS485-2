@@ -4,6 +4,12 @@ A Node.js application for real-time monitoring of up to 4 JK-BMS (JIKONG Battery
 
 ## Hardware Requirements
 
+|-----------|-------|
+| BMS | JK-PB1A16S-10P (16S LiFePO4, 100A, 1A balancing) |
+| Firmware | V19.26 |
+| Computer | Raspberry Pi (tested on Pi 4, Pi 3) |
+| USB Adapter | SparkFun USB to RS-485 Converter (CP2102) |
+
 | Component | Model | Specifications |
 |-----------|-------|----------------|
 | BMS | JK-PB1A16S-10P | 16S LiFePO4, 100A continuous, 1A active balancing |
@@ -51,9 +57,8 @@ cd JK-BMS_RS485-2
 npm install
 
 # 3. Configure serial port (edit jk-bms-monitor.js)
-# Linux:   /dev/ttyUSB0
-# Windows: COM3
-# macOS:   /dev/tty.usbserial-XXXX
+Linux:   /dev/ttyUSB0 (tested)
+
 
 # 4. Run the monitor
 npm start
