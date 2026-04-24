@@ -43,7 +43,7 @@ A Node.js application for real-time monitoring of up to 4 JK-BMS (JIKONG Battery
   }
 }
 
-# 3. Configure serial port (edit jk-bms-monitor.js)
+# 3. Configure serial port (edit JK-BMS_RS485-2.js)
 Linux:   /dev/ttyUSB0 (tested)
 
 
