@@ -4,6 +4,7 @@ A Node.js application for real-time monitoring of up to 4 JK-BMS (JIKONG Battery
 
 ## Hardware Requirements
 
+| Component | Model |
 |-----------|-------|
 | BMS | JK-PB1A16S-10P (16S LiFePO4, 100A, 1A balancing) |
 | Firmware | V19.26 |
@@ -12,6 +13,7 @@ A Node.js application for real-time monitoring of up to 4 JK-BMS (JIKONG Battery
 
 | Component | Model | Specifications |
 |-----------|-------|----------------|
+| Computer | Raspberry Pi (tested on Pi 4, Pi 3) |
 | BMS | JK-PB1A16S-10P | 16S LiFePO4, 100A continuous, 1A active balancing |
 | Firmware | V19.x | Tested on V19.26 |
 | Protocol | UART-TTL Proprietary | Direct serial (NOT Modbus RS-485) |
