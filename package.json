@@ -4,8 +4,7 @@
   "description": "Multi-battery monitor for JK-BMS via UART-TTL protocol",
   "main": "jk-bms-monitor.js",
   "scripts": {
-    "start": "node jk-bms-monitor.js",
-    "diagnose": "node jk-bms-diagnose.js"
+    "start": "node JK-BMS_RS485-2.js"
   },
   "dependencies": {
     "serialport": "^10.5.0"
