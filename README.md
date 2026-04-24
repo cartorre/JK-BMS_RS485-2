@@ -8,6 +8,7 @@ A Node.js application for real-time monitoring of up to 4 JK-BMS (JIKONG Battery
 
 | Component | Model | Specifications |
 |-----------|-------|----------------|
+
 | Computer | Raspberry Pi | (tested on Pi B) |
 | BMS | JK-PB1A16S-10P | 16S LiFePO4, 100A continuous, 1A active balancing |
 | Firmware | V19.x | Tested on V19.26 |
@@ -15,6 +16,7 @@ A Node.js application for real-time monitoring of up to 4 JK-BMS (JIKONG Battery
 | USB Adapter | SparkFun USB to RS-485 Converter | 
 
 ### BMS Technical Details
+
 - Vendor ID: JK-PB1A16S10P
 - Hardware Version: V19A
 - Software Version: V19.26
@@ -37,6 +39,7 @@ A Node.js application for real-time monitoring of up to 4 JK-BMS (JIKONG Battery
 
 
 ### Dependencies
+
 {
   "dependencies": {
     "serialport": "^10.5.0"
@@ -44,16 +47,18 @@ A Node.js application for real-time monitoring of up to 4 JK-BMS (JIKONG Battery
 }
 
 # 3. Configure serial port (edit JK-BMS_RS485-2.js)
+
 Linux:   /dev/ttyUSB0 (tested)
 
 
 **Important Notes:**
-- Cross-connect TX/RX: BMS TX → Converter RX, BMS RX → Converter TX
+
 - Do NOT connect VBAT (battery voltage) to the converter
 - The BMS uses 3.3V/5V TTL logic levels (not differential RS-485)
 - Only connect the MASTER BMS directly; slave BMS units communicate through the RS-485 bus
 
 ### Battery Address Configuration
+
 Each BMS must have a unique address (configured via the JK-BMS mobile app):
 - **Address 0x00**: Master
 - **Address 0x01**: Slave 1
@@ -64,10 +69,12 @@ Each BMS must have a unique address (configured via the JK-BMS mobile app):
 
 
 ### Operating System Compatibility
+
 - **Linux**: Tested (Ubuntu 20.04+)
 
   
 ### Related Projects
+
 - **esphome-jk-bms**: ESPHome integration for JK-BMS
 - **arduino-jk-bms**: Arduino library for JK-BMS
 - **txubelaxu/esphome-jk-bms**: Fork with PB series support
