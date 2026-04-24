@@ -72,10 +72,9 @@ Each BMS must have a unique address (configured via the JK-BMS mobile app):
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/jk-bms-monitor.git
-cd jk-bms-monitor
+git clone https://github.com/cartorre/JK-BMS_RS485-2.git
+cd JK-BMS_RS485-2
 
+npm install
 
-
-# 4. Run the monitor
 npm start
