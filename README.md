@@ -44,19 +44,10 @@ A Node.js application for real-time monitoring of up to 4 JK-BMS (JIKONG Battery
   }
 }
 
-
-## Installation
-
-# 1. Clone the repository
-git clone https://github.com/cartorre/JK-BMS_RS485-2.git
-
-cd JK-BMS_RS485-2
-
-# 2. Install dependencies
-npm install
-
 # 3. Configure serial port (edit jk-bms-monitor.js)
 Linux:   /dev/ttyUSB0 (tested)
+
+
 **Important Notes:**
 - Cross-connect TX/RX: BMS TX → Converter RX, BMS RX → Converter TX
 - Do NOT connect VBAT (battery voltage) to the converter
@@ -72,15 +63,10 @@ Each BMS must have a unique address (configured via the JK-BMS mobile app):
 
 ## Software Requirements
 
-| Software | Minimum Version |
-|----------|----------------|
-| Node.js  | 14.x or higher |
-| npm      | 6.x or higher  |
 
 ### Operating System Compatibility
 - **Linux**: Tested (Ubuntu 20.04+)
-- **Windows**: Tested (Windows 10/11)
-- **macOS**: Should work (untested)
+
 
 ## Installation
 
